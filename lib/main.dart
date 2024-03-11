@@ -6,6 +6,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 
 void main() async{
+  print('hello');
   WidgetsFlutterBinding.ensureInitialized();
 
   var directory=await getApplicationDocumentsDirectory();
