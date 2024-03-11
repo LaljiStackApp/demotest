@@ -6,7 +6,6 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:path_provider/path_provider.dart';
 
 void main() async{
-  print('hello');
   WidgetsFlutterBinding.ensureInitialized();
 
   var directory=await getApplicationDocumentsDirectory();
@@ -19,6 +18,7 @@ void main() async{
 }
 
 class HiveDemo extends StatefulWidget {
+
   const HiveDemo({super.key});
 
   @override
@@ -28,6 +28,7 @@ class HiveDemo extends StatefulWidget {
 class _HiveDemoState extends State<HiveDemo> {
   @override
   Widget build(BuildContext context) {
+    print('hello');
     return Scaffold(
       body:ValueListenableBuilder<Box<HiveModel>>(
         valueListenable: HiveDemoData.getBox().listenable(),
